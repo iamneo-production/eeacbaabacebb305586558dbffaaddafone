@@ -6,24 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EMI Calculator</title>
-  <link rel="stylesheet" href = "style.css"/>
-  <script src = "app.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js"></script>
 </head>
 
 <body>
   <div>
     <div class='container'>
+      <form>
       <h1>EMI Calculator</h1><br>
       <label>
         Loan Amount:
       </label><br>
-      <input type="text" id="loanAmount"></input> <br>
-      <label> Interest Rate:</label> <br>
-      <input type="text" id="interestRate"> <br>
-      <label>Loan Term</label> <br>
-      <input type="text" id="loanTerm"> <br>
-      <button id="submit" onclick=calculate() type="button">Calculate EMI</button>
-      <p id="ans"></p>
+     
+        <input type="text" id="loanAmount"></input> <br>
+        <label> Interest Rate:</label> <br>
+        <input type="text" id="interestRate"> <br>
+        <label>Loan Term</label> <br>
+        <input type="text" id="loanTerm"> <br>
+        <button id="submit" onclick=calculate() type="button">Calculate EMI</button>
+        <p id="ans"></p>
+      </form>
     </div>
   </div>
 </body>
