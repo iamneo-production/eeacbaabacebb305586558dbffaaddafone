@@ -5,7 +5,7 @@ function calculate() {
     var term = parseInt(document.getElementById("loanTerm").value);
     var pow = Math.pow((1 + rate), term)
     var sol = ((price * rate * pow) / (pow - 1))
-    document.getElementById("ans").innerHTML = sol;
+    document.getElementById("ans").innerHTML = "$"+sol.toFixed(2);
 
     if (sol > 1000) {
       document.getElementById("ans").style.color = "red";
